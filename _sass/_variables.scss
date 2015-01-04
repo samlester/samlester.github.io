@@ -1,0 +1,25 @@
+// Variables
+// --------------------------------------------------------------------------------
+
+// Base styles
+$base-spacing: 20px;
+$base-font-size: 20px;
+$base-font-family: "ff-tisa-web-pro", "Tisa Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// Headings
+$heading-font-family: "effra", "Effra", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$code-font-family: "Droid Sans Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// Colours
+$border-color: #eee;
+$border-color-focus: darken($border-color, 20%);
+
+$base-font-color: #132C33;
+$heading-font-color: #122930;
+$primary-color: #00ACBF;
+
+// Breakpoints
+$small: new-breakpoint(min-width 450px, $total-columns: 12);
+$medium: new-breakpoint(min-width 770px, $total-columns: 12);
+$large: new-breakpoint(min-width 1140px, $total-columns: 12);

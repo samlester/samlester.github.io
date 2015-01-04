@@ -1,0 +1,13 @@
+// Footer
+// --------------------------------------------------------------------------------
+
+.footer {
+  background-color: #FCFCFC;
+  border-top: 1px solid $border-color;
+  color: #778083;
+  padding-top: $base-spacing * 2;
+  padding-bottom: $base-spacing * 2;
+  p {
+    margin-bottom: 0
+  }
+}

@@ -1,0 +1,56 @@
+// Header
+// --------------------------------------------------------------------------------
+
+.header {
+  font-family: $heading-font-family;
+  background-color: $primary-color;
+  background-image: url("../images/background.png");
+  font-size: em(24, $base-font-size);
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+
+  @include media($medium) {
+    padding-top: ($base-spacing * 2);
+    padding-bottom: ($base-spacing * 2);
+  }
+
+  a {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .brand {
+    @include span-columns(12);
+    @include media($small) {
+      @include span-columns(5);
+    }
+  }
+
+  .nav {
+    @include span-columns(12);
+    @include media($small) {
+      @include span-columns(7);
+    }
+  }
+}
+
+.nav ul {
+  text-align: left;
+  @include media($small) {
+    text-align: right;
+  }
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    @include media($medium) {
+      margin-right: 0;
+      margin-left: 20px;
+    }
+    a {
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

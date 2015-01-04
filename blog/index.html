@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<main class="container page">
+  <section class="content posts">
+    <h1>Blog posts</h1>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>

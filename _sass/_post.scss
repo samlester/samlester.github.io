@@ -1,0 +1,28 @@
+// Post
+// --------------------------------------------------------------------------------
+
+.post {
+  .meta {
+    @include span-columns(12);
+    margin-bottom: em(12, $base-font-size);
+    color: #778083;
+    @include media($large) {
+      @include span-columns(2 of 8);
+      @include shift(-2);
+      text-align: right;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.post,
+.page {
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+  @include media($medium) {
+    padding-top: $base-spacing * 3;
+    padding-bottom: $base-spacing * 3;
+  }
+}
