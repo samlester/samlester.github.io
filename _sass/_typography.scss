@@ -57,14 +57,24 @@ h6 {
 }
 
 h1 {
-  font-size: em(45, $base-font-size);
+  font-size: em(37, $base-font-size);
   line-height: 1;
+  @include media($small) {
+    font-size: em(45, $base-font-size);
+  }
   @include media($medium) {
     font-size: em(54, $base-font-size);
     line-height: 1.1;
-    margin-bottom: $base-spacing / 2;
+    margin-bottom: $base-spacing;
   }
   margin-top: 0;
+}
+
+h2 {
+  font-size: em(25, $base-font-size);
+  @include media($medium) {
+    font-size: em(30, $base-font-size);
+  }
 }
 
 // Lists

@@ -58,15 +58,28 @@ input[type="submit"] {
     padding-bottom: -20px;
     &:hover {
       border-bottom-color: rgba(255,255,255,1);
+      color: #fff;
     }
   }
 }
 
 .posts {
-  padding-bottom: $base-spacing * 2;
-  margin-bottom: $base-spacing * 2;
-  border-bottom: 1px solid $border-color;
+  margin-bottom: $base-spacing;
+  @include media($medium) {
+    margin-bottom: $base-spacing * 2;
+  }
+  &.posts--home {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: $base-spacing;
+    @include media($medium) {
+      padding-bottom: $base-spacing * 2;
+    }
+  }
+  h1 {
+    margin-bottom: $base-spacing;
+  }
   h2 {
+    margin-top: 0;
     margin-bottom: 0;
   }
   span {
@@ -74,23 +87,20 @@ input[type="submit"] {
   }
 }
 
-.about {
-  margin-bottom: $base-spacing * 2;
-}
-
 .profile-image {
   border-radius: 100%;
   margin: 0 auto;
   display: block;
   margin-bottom: $base-spacing;
+  max-width: 50%;
   @include media($medium) {
     margin-bottom: $base-spacing * 2;
   }
 }
 
-.page {
+.page--about {
   p:first-of-type {
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.3;
   }
 }

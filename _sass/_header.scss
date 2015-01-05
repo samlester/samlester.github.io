@@ -20,8 +20,17 @@
   }
 
   .brand {
+    a {
+      opacity: 0.6;
+      &:hover, &.nav--selected {
+        opacity: 1;
+      }
+      @include transition(opacity 0.3s);
+    }
+    margin-bottom: 0.2em;
     @include span-columns(12);
     @include media($small) {
+      margin-bottom: 0;
       @include span-columns(5);
     }
   }
@@ -48,7 +57,8 @@
     }
     a {
       opacity: 0.6;
-      &:hover {
+      @include transition(opacity 0.3s);
+      &:hover, &.nav--selected {
         opacity: 1;
       }
     }
