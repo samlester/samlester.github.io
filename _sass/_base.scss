@@ -68,6 +68,9 @@ input[type="submit"] {
   @include media($medium) {
     margin-bottom: $base-spacing * 2;
   }
+  li {
+    margin-bottom: $base-spacing;
+  }
   &.posts--home {
     border-bottom: 1px solid $border-color;
     padding-bottom: $base-spacing;

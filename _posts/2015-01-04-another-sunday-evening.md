@@ -2,7 +2,6 @@
 layout: post
 title: "Another Sunday evening"
 date: 2015-01-04 18:16:00
-tags: announcements
 ---
 As I write this it's Sunday evening and I still haven't launched my new site. Another weekend where I've been putting it off in favour of absolutely anything else.
 
