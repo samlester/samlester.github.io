@@ -4,15 +4,41 @@
 .post {
   .meta {
     @include span-columns(12);
-    margin-bottom: em(12, $base-font-size);
+    margin-bottom: em(20, $base-font-size);
     color: #778083;
-    @include media($large) {
+
+    /*@include media($large) {
       @include span-columns(2 of 8);
       @include shift(-2);
       text-align: right;
-    }
+    }*/
+
     p {
       margin-bottom: 0;
+    }
+  }
+
+  .image {
+    display: block;
+    margin: 1.5em 0 2em 0;
+
+    img {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    figcaption {
+      line-height: 1.4;
+      border-bottom: 1px solid $border-color;
+      padding: 1em 0;
+    }
+  }
+
+  .image--wide {
+    @include media($medium) {
+      width: 120%;
+      margin-left: -10%;
     }
   }
 }
