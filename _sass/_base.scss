@@ -52,6 +52,11 @@ input[type="submit"] {
   h1, a {
     color: #fff;
   }
+  h1 {
+    @include media($medium) {
+      max-width: 90%;
+    }
+  }
   a {
     @include transition(border-color 0.3s);
     border-bottom: 1px solid rgba(255,255,255,0.4);
